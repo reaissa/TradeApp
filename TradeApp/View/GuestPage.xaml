@@ -1,0 +1,36 @@
+﻿<Window x:Class="TradeApp.View.GuestPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TradeApp.View"
+        mc:Ignorable="d"
+        Title="GuestPage" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.4*"/>
+        </Grid.RowDefinitions>
+        <Border Padding="14">
+            <Border BorderThickness="1" Background="#FF76E383" CornerRadius="8" Padding="10">
+                <StackPanel>
+                    <Label Content="Вы в гостевом аккаунте" FontFamily="Comic Sans MS"></Label>
+                </StackPanel>
+            </Border>
+        </Border>
+        
+        <Border Grid.Row="2" Padding="10">
+            <Border BorderThickness="1" Background="#FF498C51" CornerRadius="8" >
+                <Button Content="Выйти из аккаунта" FontSize="20" Click="Submit_Exit" Height="45" BorderBrush="Transparent" Background="Transparent" FontFamily="Comic Sans MS"></Button>
+            </Border>
+        </Border>
+        
+        
+
+    </Grid>
+</Window>
